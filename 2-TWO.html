@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90 DAYS PROGRAM - Select Courses</title>
+    <style>
+        /* Internal CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333333); /* Dark gradient background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            background-color: #222;
+            border: 2px solid #00ff99; /* Neon green border */
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 255, 153, 0.5);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            background: rgba(0, 255, 153, 0.1); /* Subtle neon glow */
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -100px;
+            z-index: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            background: linear-gradient(90deg, #00ffcc, #00ff99); /* Electric blue to neon green gradient */
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            margin-bottom: 20px;
+            font-weight: bold;
+            z-index: 1;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        /* Add a subtle underline */
+        h1::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: #00ffcc; /* Electric blue underline */
+            bottom: -5px;
+            left: 25%;
+            border-radius: 2px;
+        }
+
+        p {
+            color: #bfbfbf;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Styling the course links as buttons */
+        .course-link {
+            padding: 15px;
+            font-size: 1.1em;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 2px solid #555;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 255, 153, 0.1);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Hover effect for course links */
+        .course-link:hover {
+            background-color: #00ff99; /* Neon green on hover */
+            color: #1a1a1a;
+            border-color: #00ffcc; /* Electric blue border on hover */
+            box-shadow: 0 6px 12px rgba(0, 255, 153, 0.5);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Course Selection Container -->
+    <div class="container">
+        <div class="circle"></div>
+
+        <!-- Professional Heading -->
+        <h1>Select Your Course</h1>
+        <p>Pick one of the courses below to start your 90-Day Program:</p>
+
+        <!-- Course Links as Buttons with Emojis -->
+        <div class="button-group">
+            <a href="2-1-0.html" class="course-link">🌐 HTML, CSS, JavaScript</a>
+            <a href="2-2-0.html" class="course-link">💻 C Programming</a>
+            <a href="2-3-0.html" class="course-link">🐍 Python Programming</a>
+            <a href="2-4-0.html" class="course-link">☕ Java Programming</a>
+            <a href="2-5-0.html" class="course-link">🛠️ Machine Learning</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90 DAYS PROGRAM - Login</title>
+    <style>
+        /* Internal CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333333);
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e0e0e0;
+            flex-direction: column;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #008080;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Adds space between emoji and text */
+        }
+
+        .navbar a:hover {
+            background-color: #008080;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 30px;
+            background-color: #222;
+            border: 2px solid #008080;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 128, 128, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: transparent;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            margin-bottom: 20px;
+            z-index: 1;
+            position: relative;
+            
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #00c6ff;
+            outline: none;
+        }
+
+        .sign-in-button {
+            padding: 12px 20px;
+            background-color: #008080;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s ease-in, background-color 0.3s;
+        }
+
+        .sign-in-button:hover {
+            transform: scale(1.02);
+            background-color: #005f5f;
+        }
+
+        .info-message {
+            color: #999;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="1-1-0.html">ℹ️ About Us</a>
+        <a href="1-2-0.html">📞 Contact Us</a>
+    </div>
+
+    <!-- Login Container -->
+    <div class="container">
+        
+
+        <!-- Heading -->
+        <h1>Learn Easily<br>Learn Fastly</h1>
+
+        <!-- Login Form -->
+        <form>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <!-- Submit Link -->
+            <a href="2-TWO.html" class="sign-in-button">Sign In</a>
+        </form>
+
+        <!-- Message Area -->
+        <p class="info-message">Enter your credentials to start your journey.</p>
+    </div>
+</body>
+</html>
